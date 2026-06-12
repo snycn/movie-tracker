@@ -1,21 +1,13 @@
 import "./App.css";
+import Home from "./pages/Home"
 
 function App() {
+  const num = 2;
+
   return (
     <>
-      <div>
-        <Text sometext="hello" />
-        <Text sometext="world" />
-      </div>
+      <Home />
     </>
-  );
-}
-
-function Text({sometext}) {
-  return (
-    <div>
-      <p>{sometext}</p>
-    </div>
   );
 }
 

@@ -1,5 +1,6 @@
-function MovieCard({ movie }) {
 
+function MovieCard({ movie }) {
+  
   function onFavoriteClick() {
     alert("clicked");
   }
@@ -12,6 +13,12 @@ function MovieCard({ movie }) {
           dis a button
         </button>
       </div>
+      <div clasName="movie-info">
+        <h3>{movie.title}</h3>
+        <p>{movie.release_date}</p>
+      </div>
     </div>
   );
 }
+
+export default MovieCard;
